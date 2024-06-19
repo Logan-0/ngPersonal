@@ -1,0 +1,99 @@
+<div class='contact-bg'>
+    <div class="contact container">
+        <div class="contact cText">
+            <h1 class='contact conTitle'>Post Office</h1>
+            <!-- Set this to display for Desktop-->  @if (screenHeight >= 768){ 
+            <div class='contact row'>
+                <div class='contact col'>
+                    <!-- CONTACT FORM -->
+                    <!-- CONTACT FORM -->
+                    <!-- CONTACT FORM -->
+                    <div class="contact form-container">
+                        <form class="contact form" [formGroup]="contactForm">
+                            <div class="contact formSeg">
+                                <div class="contact col">
+                                    <input autoComplete="off" type="email" class="contact form-control" id="emailInput"
+                                        placeholder="Email Address" required />
+                                </div>
+                            </div>
+                            <div class="contact formSeg">
+                                <div class="contact col">
+                                    <input autoComplete="off" type="text" class="contact form-control"
+                                        id="firstNameInput" placeholder="First Name" required />
+                                </div>
+                            </div>
+                            <div class="contact formSeg">
+                                <div class="contact col">
+                                    <input autoComplete="off" type="text" class="contact form-control"
+                                        id="lastNameInput" placeholder="Last Name" required />
+                                </div>
+                            </div>
+                            <div class="contact formSeg">
+                                <div class="contact col">
+                                    <textarea autoComplete="off" type="textarea" class="contact form-control"
+                                        id="comments" rows="5" cols="40" placeholder="Message..." required></textarea>
+                                </div>
+                            </div>
+                            <div class="row form-buttons">
+                                <input type="submit" class="contact btn submit" value="Send Message"
+                                    (click)="submit()" />
+                                <input type="reset" class="contact btn reset" value="Clear Form" (click)="reset()" />
+                            </div>
+                        </form>
+                    </div>
+                    <!-- CONTACT FORM END-->
+                    <!-- CONTACT FORM END-->
+                    <!-- CONTACT FORM END-->
+                </div>
+                <div class='contact col'>
+                    <img [src]=choppingWood alt='choppnWood' />
+                </div>
+            </div>
+            } <!-- Set this to display for Mobile --> @else {
+            <div class='contact col'>
+                <!-- CONTACT FORM -->
+                <!-- CONTACT FORM -->
+                <!-- CONTACT FORM -->
+                <div class="contact form-container">
+                    <form class="contact form" [formGroup]="contactForm">
+                        <div class="contact formSeg">
+                            <div class="contact col">
+                                <input autoComplete="off" type="email" class="contact form-control" id="emailInput"
+                                    placeholder="Email Address" required />
+                            </div>
+                        </div>
+                        <div class="contact formSeg">
+                            <div class="contact col">
+                                <input autoComplete="off" type="text" class="contact form-control" id="firstNameInput"
+                                    placeholder="First Name" required />
+                            </div>
+                        </div>
+                        <div class="contact formSeg">
+                            <div class="contact col">
+                                <input autoComplete="off" type="text" class="contact form-control" id="lastNameInput"
+                                    placeholder="Last Name" required />
+                            </div>
+                        </div>
+                        <div class="contact formSeg">
+                            <div class="contact col">
+                                <textarea autoComplete="off" type="textarea" class="contact form-control" id="comments"
+                                    rows="5" cols="40" placeholder="Message..." required></textarea>
+                            </div>
+                        </div>
+                        <div class="row form-buttons">
+                            <input type="submit" class="contact btn submit" value="Send Message" (click)="submit()" />
+                            <input type="reset" class="contact btn reset" value="Clear Form" (click)="reset()" />
+                        </div>
+                    </form>
+                </div>
+                <!-- CONTACT FORM END-->
+                <!-- CONTACT FORM END-->
+                <!-- CONTACT FORM END-->
+            </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+<a>Peanut</a>

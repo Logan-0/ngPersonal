@@ -1,0 +1,19 @@
+<div class='splash-bg'>
+    <!-- {/* Set this to display for Desktop */} --> @if (screenHeight >= 768){
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-center">
+            <div class='col'>
+                <img class="splash justify-content-center splash-graphic" [src]=graphic alt='Graphic' />
+            </div>
+            <div class='col'>
+                <img class="splash justify-content-center splash-logo" [src]=logo alt='Logo' />
+            </div>
+        </div>
+    </div>
+    } <!-- {/* Set this to display for Mobile */} --> @else {
+    <div class="container">
+        <img class="splash splash-graphic" [src]=graphic alt='Graphic' />
+        <img class="splash splash-logo" [src]=logo alt='Logo' />
+    </div>
+    }
+</div>

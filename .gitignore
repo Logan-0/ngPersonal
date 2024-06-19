@@ -1,0 +1,19 @@
+# Node Modules
+./client/node_modules
+./server/node_modules
+
+# Build Files
+./client/dist
+./server/dist
+
+# Environment Variables
+./server/.env
+server/.env
+
+# Yarn Lock Files
+./server/yarn.lock
+./client/yarn.lock
+
+# Code Editor Files
+./client/.angular
+./client/.vscode

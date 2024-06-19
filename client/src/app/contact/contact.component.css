@@ -1,0 +1,291 @@
+@media only screen and (max-width: 768px) {
+    div.contact-bg {
+        height: 100vh;
+        width: 100vw;
+        background-repeat: repeat;
+        background-color: #A2AC94;
+        background-size: cover;
+        font-family: NationalPark;
+        text-decoration: none;
+        overflow: hidden;
+    }
+
+    div.contact.container {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+
+    div.contact.form-container {
+        width: 100%;
+    }
+
+    form.contact {
+        width: 100%;
+        padding: 0%;
+        margin: 5% 0%;
+    }
+
+    input#emailInput.contact.form-control,
+    input#firstNameInput.contact.form-control,
+    input#lastNameInput.contact.form-control {
+        background-color: #3E4437;
+        border-color: #3E4437;
+        color: white;
+        font-family: Pacifico;
+        margin: 2% 0%;
+    }
+
+    input#emailInput.contact.form-control:focus,
+    input#firstNameInput.contact.form-control:focus,
+    input#lastNameInput.contact.form-control:focus {
+        background-color: #3E4437;
+        border-color: #3E4437;
+        color: white;
+        font-family: NationalPark;
+        margin: 2% 0%;
+    }
+
+    input#emailInput.contact.form-control::placeholder,
+    input#firstNameInput.contact.form-control::placeholder,
+    input#lastNameInput.contact.form-control::placeholder {
+        color: white;
+        font-family: Pacifico;
+        margin: 2% 0%;
+    }
+
+    input#emailInput.contact.form-control:hover::placeholder,
+    input#firstNameInput.contact.form-control:hover::placeholder,
+    input#lastNameInput.contact.form-control:hover::placeholder {
+        color: white;
+        font-family: NationalPark;
+        margin: 2% 0%;
+    }
+
+    textarea#comments.contact.form-control {
+        resize: none;
+        margin: 1.5% 0%;
+        background-color: #3E4437;
+        border-color: #3E4437;
+        color: white;
+        font-family: NationalPark;
+        margin: 1.5% 0%;
+    }
+
+    textarea#comments.contact.form-control:focus {
+        resize: none;
+        margin: 1.5% 0%;
+        background-color: #3E4437;
+        border-color: #3E4437;
+        color: white;
+        font-family: NationalPark;
+        margin: 2% 0%;
+    }
+
+    textarea#comments.contact.form-control::placeholder {
+        resize: none;
+        margin: 1.5% 0%;
+        background-color: #3E4437;
+        border-color: #3E4437;
+        color: white;
+        font-family: Pacifico;
+        margin: 2% 0%;
+    }
+
+    textarea#comments.contact.form-control:hover::placeholder {
+        resize: none;
+        margin: 1.5% 0%;
+        background-color: #3E4437;
+        border-color: #3E4437;
+        color: white;
+        font-family: NationalPark;
+        margin: 2% 0%;
+    }
+
+    h1.contact.conTitle {
+        text-align: center;
+        font-family: Pacifico;
+        color: #3E4437;
+        font-size: 2em;
+        padding: 5% 0% 5% 0%;
+    }
+
+    input.contact.btn.submit,
+    input.contact.btn.reset {
+        background: #3E4437;
+        border-color: #3E4437;
+        width: 45%;
+        margin: 5% 2%;
+        margin: 5% 2%;
+        color: white;
+        font-family: Pacifico;
+    }
+
+    input.contact.btn.submit:hover,
+    input.contact.btn.reset:hover {
+        background-color: #3E4437;
+        border-color: #3E4437;
+        color: orangered !important;
+        width: 45%;
+        margin: 5% 2%;
+        font-family: NationalPark;
+    }
+
+    input.contact.btn.submit:active,
+    input.contact.btn.reset:active {
+        background-color: #3E4437;
+        color: slategray !important;
+        width: 45%;
+        margin: 5% 2%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    div.contact-bg {
+        height: 100vh;
+        width: 100vw;
+        background-repeat: repeat;
+        background-color: #A2AC94;
+        background-size: cover;
+        font-family: NationalPark;
+        text-decoration: none;
+    }
+
+    div.contact.container {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+
+    .contact.row {
+        transform: translateY(25%);
+    }
+
+    img {
+        transform: translateY(-15%);
+        width: 93%;
+        height: 93%;
+    }
+
+    div.contact.form-container {
+        width: 100%;
+    }
+
+    form.contact {
+        width: 80%;
+        padding: 0%;
+        margin: 2.5% 0%;
+    }
+
+    input#emailInput.contact.form-control,
+    input#firstNameInput.contact.form-control,
+    input#lastNameInput.contact.form-control {
+        background-color: #3E4437;
+        border-color: #3E4437;
+        color: white;
+        margin: 1.5% 0%;
+    }
+
+    input#emailInput.contact.form-control:focus,
+    input#firstNameInput.contact.form-control:focus,
+    input#lastNameInput.contact.form-control:focus {
+        background-color: #3E4437;
+        border-color: #3E4437;
+        color: white;
+        font-family: NationalPark;
+        margin: 1.5% 0%;
+    }
+
+    input#emailInput.contact.form-control::placeholder,
+    input#firstNameInput.contact.form-control::placeholder,
+    input#lastNameInput.contact.form-control::placeholder {
+        color: white;
+        margin: 1.5% 0%;
+    }
+
+    input#emailInput.contact.form-control:hover::placeholder,
+    input#firstNameInput.contact.form-control:hover::placeholder,
+    input#lastNameInput.contact.form-control:hover::placeholder {
+        color: white;
+        font-family: NationalPark;
+        margin: 1.5% 0%;
+    }
+
+    textarea#comments.contact.form-control {
+        resize: none;
+        margin: 1.5% 0%;
+        background-color: #3E4437;
+        border-color: #3E4437;
+        color: white;
+        font-family: NationalPark;
+        margin: 1.5% 0%;
+    }
+
+    textarea#comments.contact.form-control:focus {
+        resize: none;
+        margin: 1.5% 0%;
+        background-color: #3E4437;
+        border-color: #3E4437;
+        color: white;
+        font-family: NationalPark;
+        margin: 1.5% 0%;
+    }
+
+    textarea#comments.contact.form-control::placeholder {
+        resize: none;
+        margin: 1.5% 0%;
+        background-color: #3E4437;
+        border-color: #3E4437;
+        color: white;
+        margin: 1.5% 0%;
+    }
+
+    textarea#comments.contact.form-control:hover::placeholder {
+        resize: none;
+        margin: 1.5% 0%;
+        background-color: #3E4437;
+        border-color: #3E4437;
+        color: white;
+        font-family: NationalPark;
+        margin: 1.5% 0%;
+    }
+
+    h1.contact.conTitle {
+        text-align: center;
+        font-family: Pacifico;
+        color: #3E4437;
+        font-size: 4em;
+        padding: 2.5% 0% 0% 0%;
+    }
+
+    input.contact.btn.submit,
+    input.contact.btn.reset {
+        background: #3E4437;
+        border-color: #3E4437;
+        width: 45%;
+        margin: 5% 2%;
+        margin: 5% 2%;
+        color: white;
+        font-family: Pacifico;
+    }
+
+    input.contact.btn.submit:hover,
+    input.contact.btn.reset:hover {
+        background-color: #3E4437;
+        border-color: #3E4437;
+        color: orangered !important;
+        width: 45%;
+        margin: 5% 2%;
+        font-family: NationalPark;
+    }
+
+    input.contact.btn.submit:active,
+    input.contact.btn.reset:active {
+        background-color: #3E4437;
+        color: slategray !important;
+        width: 45%;
+        margin: 5% 2%;
+    }
+}

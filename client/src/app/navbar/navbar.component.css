@@ -1,0 +1,107 @@
+/* Nav CSS */
+@media only screen and (max-width: 768px) {
+    nav.navbar.justify-content-center.nav-splash {
+        background-color: #3E4437;
+        font-family: Pacifico;
+        height: 3.8em;
+    }
+
+    nav.navbar.justify-content-center.nav-other {
+        background-color: #3E4437;
+        font-family: Pacifico;
+        height: 3.8em;
+    }
+
+    .collapse {
+        background-color: #3E4437;
+        ;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+
+    ul {
+        background-color: #3E4437;
+        list-style-type: none;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    li {
+        margin-left: 2%;
+        margin-right: 2%;
+        font-family: Pacifico;
+        font-size: 1.2em;
+    }
+
+    a:hover {
+        color: orangered !important;
+        font-family: Pacifico;
+        width: 100%;
+    }
+
+    a:link {
+        color: white;
+        font-size: .93em;
+        font-family: Pacifico;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    a:visited {
+        color: white;
+        font-size: .93em;
+        font-family: Pacifico;
+        text-decoration: none;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    nav.navbar.navbar-expand-md.justify-content-center.nav-splash {
+        background-color: #A2AC94 !important;
+        font-family: Pacifico;
+    }
+
+    nav.navbar.navbar-expand-md.justify-content-center.nav-other {
+        background-color: #3E4437 !important;
+        font-family: Pacifico;
+        display: flex;
+    }
+
+    ul {
+        list-style-type: none;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        font-family: Pacifico;
+        font-size: 3em;
+    }
+
+    a:hover {
+        color: orangered !important;
+        font-family: Pacifico;
+    }
+
+    a:link {
+        color: white;
+        font-size: 1em;
+        font-family: Pacifico;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: white;
+        font-size: 1em;
+        font-family: Pacifico;
+        text-decoration: none;
+    }
+}

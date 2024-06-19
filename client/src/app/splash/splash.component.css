@@ -1,0 +1,48 @@
+/* Splash CSS Mobile*/
+@media only screen and (max-width: 768px) {
+    div.splash-bg {
+        height: 100vh;
+        width: 100vw;
+        background-color: #A2AC94;
+        font-family: Pacifico;
+        text-decoration: none;
+        overflow: hidden;
+    }
+
+    img.splash.splash-graphic {
+        transform: translateY(10%);
+        height: 120%;
+        margin: auto;
+    }
+
+    img.splash.splash-logo {
+        transform: translateY(15%);
+        height: 9em;
+        margin: auto;
+    }
+}
+
+/* Splash CSS Desktop*/
+@media only screen and (min-width: 769px) {
+    div.splash-bg {
+        height: 100vh;
+        width: 100vw;
+        background-repeat: repeat-x;
+        background-color: #A2AC94;
+        background-size: cover;
+        font-family: Pacifico;
+        text-decoration: none;
+    }
+
+    img.splash.splash-graphic {
+        transform: translateY(60%);
+        width: 100%;
+        height: 100%;
+    }
+
+    img.splash.splash-logo {
+        transform: translateY(65%);
+        width: 100%;
+        height: 100%;
+    }
+}
