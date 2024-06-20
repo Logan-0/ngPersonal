@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
     div.contact-bg {
         height: 100vh;
         width: 100vw;
@@ -141,7 +141,7 @@
     }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 641px) {
     div.contact-bg {
         height: 100vh;
         width: 100vw;

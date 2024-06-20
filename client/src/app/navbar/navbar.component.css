@@ -1,15 +1,15 @@
 /* Nav CSS */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
     nav.navbar.justify-content-center.nav-splash {
         background-color: #3E4437;
         font-family: Pacifico;
-        height: 3.8em;
+        height: 3em;
     }
 
     nav.navbar.justify-content-center.nav-other {
         background-color: #3E4437;
         font-family: Pacifico;
-        height: 3.8em;
+        height: 3em;
     }
 
     .collapse {
@@ -59,7 +59,7 @@
     }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 641px) {
     nav.navbar.navbar-expand-md.justify-content-center.nav-splash {
         background-color: #A2AC94 !important;
         font-family: Pacifico;
