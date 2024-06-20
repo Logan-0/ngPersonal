@@ -18,7 +18,7 @@ export class NavbarComponent {
     this.screenHeight = window.innerHeight;
     this.screenWidth = window.innerWidth;
 
-    if (this.router.url === '/home' || '') { 
+    if (this.router.url === '') { 
       this.navType = "nav-splash";
     }
   }

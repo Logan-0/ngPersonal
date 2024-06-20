@@ -20,7 +20,10 @@ export class ContactComponent {
   lastName: FormControl = new FormControl('');
   message: FormControl = new FormControl('');
   email: FormControl = new FormControl('');
+
+  // Api Checks
   sent: boolean = false;
+  jsonResponse: any;
 
   alphaPattern: string = "^[a-zA-Z]*$";
 
@@ -40,7 +43,7 @@ export class ContactComponent {
   }
 
   @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
+  onResize() {
     this.screenHeight = window.innerHeight;
     this.screenWidth = window.innerWidth;
   }
@@ -49,31 +52,28 @@ export class ContactComponent {
     console.log("Submitted");
     console.log(this.contactForm)
 
-    let fName: string = this.contactForm.get('firstName')?.value || undefined;
-    let lName: string = this.contactForm.get('lastName')?.value || undefined;
-    let message: string = this.contactForm.get('message')?.value || undefined;
-    let email: string = this.contactForm.get('email')?.value || undefined;
+    let fName: string = this.contactForm.get('firstName')?.value;
+    let lName: string = this.contactForm.get('lastName')?.value;
+    let message: string = this.contactForm.get('message')?.value;
+    let email: string = this.contactForm.get('email')?.value;
 
-    let mail = { sender: email, firstName: fName, lastName: lName, message };
+    let mail: any = { sender: email, firstName: fName, lastName: lName, message };
 
     if (mail.sender === 'undefined' || mail.firstName === 'undefined' || mail.lastName === 'undefined' || mail.message === 'undefined') {
       return;
     } else {
       try {
-        let response = this.api.sendEmail(mail).subscribe(data => {
-          console.log(data + "\n\n");
+        this.api.sendEmail(mail).subscribe(data => {
+          console.log("Response from Api: ", data + "\n");
           this.sent = true;
-          console.log("Was email sent: " + this.sent);
+          console.log("Was email sent?: " + this.sent);
+
+          this.jsonResponse = JSON.parse(data);
+          console.log("Response -> Json: ", this.jsonResponse);
         });
-        console.log("Response from Api: ", response);
-
-        // let json = await response.json();
-        // console.log("Response -> Json: ", json);
-
-        // console.log("Success: ", json.data);
         this.contactForm.reset();
 
-        // return JSON.data;
+        return this.jsonResponse;
         return;
 
       } catch (error) {
@@ -81,16 +81,9 @@ export class ContactComponent {
         return;
       }
     }
-
-    // Find a way to SEND EMAIL and reinstate api call
-    // this.api.sendEmail(email, fName, lName, message).subscribe(data => {
-    //   console.log(data + "\n\n")
-    //   this.sent = true
-    //   console.log(this.sent)
-    // })
   }
 
-  async reset() {
+  reset() {
     this.contactForm.reset();
   }
 }
