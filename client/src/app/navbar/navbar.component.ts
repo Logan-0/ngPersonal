@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 
 @Component({
@@ -10,8 +10,8 @@ import { Router, RouterLink } from '@angular/router';
 })
 export class NavbarComponent {
 
-  screenHeight: number = 768;
-  screenWidth: number = 768;
+  screenHeight: number;
+  screenWidth: number;
   navType: string = "nav-other";
 
   constructor(private router: Router) {
@@ -21,5 +21,11 @@ export class NavbarComponent {
     if (this.router.url === '/home' || '') { 
       this.navType = "nav-splash";
     }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.screenHeight = window.innerHeight;
+    this.screenWidth = window.innerWidth;
   }
 }

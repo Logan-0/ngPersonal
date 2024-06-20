@@ -12,8 +12,8 @@ import { ApiService } from '../api.service';
 })
 export class ContactComponent {
 
-  screenHeight: number = 768;
-  screenWidth: number = 768;
+  screenHeight: number;
+  screenWidth: number;
 
   contactForm: FormGroup = new FormGroup({});
   firstName: FormControl = new FormControl('');

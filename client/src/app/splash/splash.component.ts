@@ -9,8 +9,8 @@ import { Component, HostListener } from '@angular/core';
 })
 export class SplashComponent {
 
-  screenHeight: number = 768;
-  screenWidth: number = 768;
+  screenHeight: number;
+  screenWidth: number;
   graphic: string = "../../assets/images/cabin2.png";
   logo: string = "../../assets/images/Logan0DeveloperLogoPt3.png"
 

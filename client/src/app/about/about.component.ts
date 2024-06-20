@@ -9,8 +9,8 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AboutComponent {
 
-  screenHeight: number = 768;
-  screenWidth: number = 768;
+  screenHeight: number;
+  screenWidth: number;
 
   tempPhoto: string = "../../assets/images/cat1.jpg"
 
