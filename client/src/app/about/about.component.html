@@ -1,1 +1,40 @@
-<p>about works!</p>
+<div class='about-bg'>
+    <br /><br />
+    <!-- Set this to display for Desktop --> @if (screenWidth >= 768){
+    <div class="about container">
+        <div class="about row">
+            <div class="about col">
+                <h4><span class="about cursive">Hello! &nbsp;</span></h4>
+                <div class="about aText">
+                    <p>I'm Logan and I love exploring new technologies and learning how things work. Some of my future
+                        projects include Machine Learning, Containerization of Applications and Snowflake</p>
+                        <br /><br />
+                    <p>Eventually this fine feline below will be replaced with the steps, tools, and libraries used to
+                        help create this website.
+                        <br />
+                    </p>
+                </div>
+            </div>
+            <div class="about col">
+                <div class="about aPic">
+                    <img [src]=tempPhoto class="about img-fluid rounded" alt="self" />
+                </div>
+            </div>
+        </div>
+    </div>
+    } <!-- Display for mobile phones --> @else {
+    <div class="about container">
+        <h4><span class="about cursive">Hello! &nbsp;</span></h4>
+        <div class="about aText">
+            <p>I'm Logan and I love exploring new technologies and learning how things work. Some of my future
+                projects include Machine Learning, Containerization of Applications and Snowflake</p>
+                <br /><br />
+            <p>Eventually this fine feline below will be replaced with the steps, tools, and libraries used to
+                help create this website.
+                <br />
+            </p>
+        </div>
+        <img [src]=tempPhoto alt='catPhoto' class='img-fluid rounded' />
+    </div>
+    }
+</div>

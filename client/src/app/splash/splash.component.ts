@@ -20,7 +20,7 @@ export class SplashComponent {
   }
 
   @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
+  onResize() {
     this.screenHeight = window.innerHeight;
     this.screenWidth = window.innerWidth;
   }
