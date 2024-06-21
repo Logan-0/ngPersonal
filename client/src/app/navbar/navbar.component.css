@@ -74,13 +74,13 @@
 }
 
 @media only screen and (min-width: 641px) {
-    nav.navbar.navbar-expand-md.justify-content-center.nav-splash {
+    nav.navbar.navbar-expand-sm.justify-content-center.nav-splash {
         background-color: #A2AC94 !important;
         font-family: Pacifico;
         height: 3.5em;
     }
 
-    nav.navbar.navbar-expand-md.justify-content-center.nav-other {
+    nav.navbar.navbar-expand-sm.justify-content-center.nav-other {
         background-color: #3E4437 !important;
         font-family: Pacifico;
         display: flex;
