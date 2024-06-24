@@ -25,6 +25,7 @@ export class ContactComponent {
   // Api Checks
   sent: boolean = false;
   jsonResponse: any;
+  error: string = ""
 
   alphaPattern: string = "^[a-zA-Z]*$";
 
@@ -41,6 +42,8 @@ export class ContactComponent {
       'email': new FormControl('', [Validators.required, Validators.minLength(8), Validators.email]),
       'message': new FormControl('', [Validators.required, Validators.minLength(11)]),
     });
+
+    this.reset();
   }
 
   @HostListener('window:resize', ['$event'])
@@ -60,7 +63,27 @@ export class ContactComponent {
 
     let mail: any = { sender: email, firstName: fName, lastName: lName, message };
 
-    if (mail.sender === 'undefined' || mail.firstName === 'undefined' || mail.lastName === 'undefined' || mail.message === 'undefined') {
+    if (mail.sender === 'undefined' || mail.sender === null) {
+      this.error = "your email!"
+    }
+    if (mail.firstName === 'undefined' || mail.firstName === null) {
+      this.error = "your first name!"
+    }
+    if (mail.lastName === 'undefined' || mail.lastName === null) {
+      this.error = "your last name!"
+    }
+    if (mail.message === 'undefined' || mail.message === null) {
+      this.error = "your message!"
+    }
+
+    if (this.error !== "") {
+      this.toastr.error('You are missing ' + this.error, 'Error Sending Email', {
+        timeOut: 2000,
+        progressBar: true,
+        progressAnimation: 'increasing',
+        closeButton: true,
+        positionClass: "toast-top-center"
+      });
       return;
     } else {
       try {
@@ -68,14 +91,19 @@ export class ContactComponent {
           console.log("Response from Api: ", data + "\n");
           this.sent = true;
           console.log("Was email sent?: " + this.sent);
-
           this.jsonResponse = JSON.parse(data);
           console.log("Response -> Json: ", this.jsonResponse);
         });
-        this.contactForm.reset();
+        this.toastr.success('Your email is on the way', 'Email Sent', {
+          timeOut: 2000,
+          progressBar: true,
+          progressAnimation: 'increasing',
+          closeButton: true,
+          positionClass: "toast-top-center"
+        });
 
+        this.contactForm.reset();
         return this.jsonResponse;
-        return;
 
       } catch (error) {
         console.log("Error on Api Call")

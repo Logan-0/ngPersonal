@@ -1,1 +1,75 @@
-<p>projects works!</p>
+<div class="project-bg">
+    <div class="project container">
+        <h1 class="project projTitle">Archives</h1>
+        <!-- Set this to display for Desktop-->
+        @if (screenWidth >= 641){
+        <div class="project row">
+            <div class="project col">
+                <div class="project aText">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <button (click)="showVisuals()" class="project nfo btn">Projects Visualized</button>
+                    <br />
+                    <br />
+                    <button (click)="showRepositories()" class="project nfo btn">Github Repositories</button>
+                </div>
+            </div>
+            <div class="project col">
+                <div class="project pPic" [hidden]="!viz">
+                    <h1 class='project'>Projects Visualized</h1>
+                    <br />
+                    <a href="https://public.tableau.com/views/RealEstateEDA/MedianPricebyStateMax5Bed5Bath?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link"
+                        target='_blank' rel="noreferrer">
+                        <button class='project nfo btn'>Real Estate Tableau Dashboard</button>
+                    </a>
+                </div>
+
+                <div class="project pPic" [hidden]="!repos">
+                    <h1 class='project'>Github Code Repository</h1>
+                    <br />
+                    <a href="https://github.com/Logan-0/MachineLearning" target='_blank' rel="noreferrer">
+                        <button class='project nfo btn'>Machine Learning</button>
+                    </a>
+                    <a href="https://github.com/Logan-0/HackerRank" target='_blank' rel="noreferrer">
+                        <button class='project nfo btn'>Hacker Rank</button>
+                    </a>
+                    <a href="https://github.com/Logan-0/realEstateScraping" target='_blank' rel="noreferrer">
+                        <button class='project nfo btn'>Real Estate Scraping</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        } @else {
+        <div class="project aText">
+            <br />
+            <button (click)="showVisuals()"  class="project nfo btn">Projects Visualized</button>
+            <br />
+            <button (click)="showRepositories()" class="project nfo btn">Github Repositories</button>
+        </div>
+        <div class='mobileViewHolder'>
+            <div class="project pPic" [hidden]="!viz">
+                <h1 class='project'>Projects Visualized</h1>
+                <br />
+                <a href="https://public.tableau.com/views/RealEstateEDA/MedianPricebyStateMax5Bed5Bath?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link"
+                    target='_blank' rel="noreferrer">
+                    <button class='project nfo btn'>Real Estate Tableau Dashboard</button>
+                </a>
+            </div>
+            <div class="project pPic" [hidden]="!repos">
+                <h1 class='project'>Github Code Repository</h1>
+                <a href="https://github.com/Logan-0/MachineLearning" target='_blank' rel="noreferrer">
+                    <button class='project nfo btn'>Machine Learning</button>
+                </a>
+                <a href="https://github.com/Logan-0/HackerRank" target='_blank' rel="noreferrer">
+                    <button class='project nfo btn'>Hacker Rank</button>
+                </a>
+                <a href="https://github.com/Logan-0/realEstateScraping" target='_blank' rel="noreferrer">
+                    <button class='project nfo btn'>Real Estate Scraping</button>
+                </a>
+            </div>
+        </div>
+        }
+    </div>
+</div>
