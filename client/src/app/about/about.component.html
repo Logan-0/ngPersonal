@@ -3,42 +3,67 @@
     <!-- Set this to display for Desktop -->
     @if (screenWidth >= 641){
     <div class="about container">
-        <div class="about row">
-            <div class="about col">
-                <h4><span class="about cursive">Hello! &nbsp;</span></h4>
-                <div class="about aText">
-                    <p>I'm Logan and I love exploring new technologies and learning how things work. Some of my
-                        future
-                        projects include Machine Learning, Containerization of Applications and Snowflake</p>
-                    <br />
-                    <p>Eventually this fine feline below will be replaced with the steps, tools, and libraries used
-                        to
-                        help create this website.
-                        <br />
-                    </p>
-                </div>
-            </div>
-            <div class="about col">
-                <div class="about aPic">
-                    <img [src]=tempPhoto class="about img-fluid rounded" alt="self" />
-                </div>
-            </div>
+        <h4><span class="about cursive">Hello!</span></h4>
+        <div class="about aText">
+            <p><strong>I'm Logan</strong> and I love exploring new technologies and learning how things work.
+            </p>
+            <strong>How this website is made:</strong>
+            <p>
+                Front end: Angular<br />
+                Back end: Express.js
+            </p>
+            <strong>What I've learned so far:</strong><br />
+            <p>
+                I'll probably stick to the front end of Angular, mainly due to React being
+                originally intended for some of the largest websites on the web to be loaded more quickly, and since
+                the amount on each page was large, and in many cases complex. The companies operating them needed a
+                solution.</p>
+            <p>
+                For personal use, I only need a few small sites, and Angular's easy setup and decoupled nature is very
+                intuitive.</p>
+            <p>
+                For the back end the popular Express.js packages used to help create a server I had to convert to
+                typescript along with the corresponding helper files for API calls. This was great to learn how
+                typescript becomes converted into javascript and how to effectively write code for folks like myself who
+                prefer a more strongly typed language.</p>
+            <p>
+                Lastly, creating the containerization for this site required a lot of setup to environment variables.
+                Along with this a small file of test cases was written to make sure the right values were allowed even
+                after deploying a the container for hosting. This leads to the infrastructure, and building of the
+                project.
+            </p>
+            <strong>Future Projects Include:</strong> Machine Learning, Containerization and Snowflake
         </div>
     </div>
     <!-- Display for mobile phones -->
     } @else {
     <div class="about container">
-        <h4><span class="about cursive">Hello! &nbsp;</span></h4>
+        <h4><span class="about cursive">Hello!</span></h4>
         <div class="about aText">
-            <p>I'm Logan and I love exploring new technologies and learning how things work. Some of my future
-                projects include Machine Learning, Containerization of Applications and Snowflake</p>
-            <br />
-            <p>Eventually this fine feline below will be replaced with the steps, tools, and libraries used to
-                help create this website.
-                <br />
+            <p>I'm Logan and I love exploring new technologies and learning how things work. Some of my
+                future projects include Machine Learning, Containerization of Applications and Snowflake
             </p>
+            <p>This website was developed using popular tools and frameworks:</p>
+            <p><strong>Front end:</strong> Angular, and React &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <strong>Back end:</strong> Express.js
+            </p>
+            <strong>What I learned so far:</strong><br />
+            I'll probably stick to the front end being Angular, mainly due to React was
+            originally intended for some of the largest websites on the web to be loaded more quickly, and since
+            the amount on each page was large, and in many cases complex. The companies operating them needed a
+            solutions.<br /><br />
+            For myself I only need a few small sites, and Angular's ease and decoupled nature is very
+            intuitive.<br /><br />
+            For the back end the popular Express.js packages used to help create a server I had to convert to
+            typescript along with the corresponding helper files for API calls. This was great to learn how
+            typescript becomes converted into javascript and how to effectively write code for folks like myself who
+            prefer a more strongly typed language. <br /><br />
+            Lastly, creating the containerization for this site required a lot of setup to environment variables.
+            Along with this a small file of test cases was written to make sure the right values were allowed even
+            after deploying a the container for hosting. This leads to the infrastructure, and building of the
+            project.
+            <br />
         </div>
-        <img [src]=tempPhoto alt='catPhoto' class='img-fluid rounded' />
     </div>
     }
 </div>

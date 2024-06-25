@@ -1,0 +1,71 @@
+/* About CSS */
+
+@media only screen and (max-width: 640px) {
+    div.about-bg {
+        width: 100vw;
+        background-color: #A2AC94;
+        background-color: #A2AC94;
+        background-size: cover;
+        font-family: Pacifico;
+        text-decoration: none;
+    }
+
+    div.about.container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about.cursive {
+        font-family: Pacifico;
+        font-size: 2em;
+        color: #3E4437;
+        padding: 2em 0em 2em 0em;
+    }
+
+    img {
+        padding: 5%;
+    }
+
+    .about.aText {
+        text-align: left;
+        padding: 2em 1em;
+        color: #3E4437;
+        font-family: NationalPark;
+        font-size: .93em;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    div.about-bg {
+        width: 100vw;
+        background-color: #A2AC94;
+        background-color: #A2AC94;
+        background-size: cover;
+        font-family: Pacifico;
+        text-decoration: none;
+    }
+
+    div.about.container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about.cursive {
+        font-family: Pacifico;
+        font-size: 2em;
+        color: #3E4437;
+        padding: 2em 0em 2em 0em;
+    }
+
+    img {
+        padding: 5%;
+    }
+
+    .about.aText {
+        text-align: left;
+        padding: 2em 1em;
+        color: #3E4437;
+        font-family: NationalPark;
+        font-size: .93em;
+    }
+}

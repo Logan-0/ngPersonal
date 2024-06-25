@@ -65,7 +65,6 @@
 
     textarea#comments.contact.form-control {
         resize: none;
-        margin: 1.5% 0%;
         background-color: #3E4437;
         border-color: #3E4437;
         color: white;
@@ -75,7 +74,6 @@
 
     textarea#comments.contact.form-control:focus {
         resize: none;
-        margin: 1.5% 0%;
         background-color: #3E4437;
         border-color: #3E4437;
         color: white;
@@ -85,7 +83,6 @@
 
     textarea#comments.contact.form-control::placeholder {
         resize: none;
-        margin: 1.5% 0%;
         background-color: #3E4437;
         border-color: #3E4437;
         color: white;
@@ -95,7 +92,6 @@
 
     textarea#comments.contact.form-control:hover::placeholder {
         resize: none;
-        margin: 1.5% 0%;
         background-color: #3E4437;
         border-color: #3E4437;
         color: white;
@@ -108,7 +104,7 @@
         font-family: Pacifico;
         color: #3E4437;
         font-size: 2em;
-        padding: 5% 0% 5% 0%;
+        padding: 5% 0%;
     }
 
     input.contact.btn.submit,
@@ -256,7 +252,7 @@
         text-align: center;
         font-family: Pacifico;
         color: #3E4437;
-        font-size: 4em;
+        font-size: 2em;
         padding: 2.5% 0% 0% 0%;
     }
 
